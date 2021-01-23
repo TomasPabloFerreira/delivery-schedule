@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Calendar.scss'
 import { initialData } from '../initialData'
-import { CalendarHeader } from '.'
+import { CalendarHeader, DayColumn } from '.'
 
 type Props = {
 	userId: string
@@ -16,7 +16,12 @@ const Calendar = ({ userId }: Props) => {
 		<div className="calendar">
 			{/* times column */}
 			<CalendarHeader labels={daysLabels} />
-			{/* body */}
+
+			<section>
+				{ days.map(x => (
+					<DayColumn data={x} key={x._id} />
+				))}
+			</section>
 		</div>
 	)
 }
