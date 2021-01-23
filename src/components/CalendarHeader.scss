@@ -14,4 +14,16 @@
 	font-weight: bold;
 	padding: 10px 0;
 	border-left: 1px dashed darkgrey;
+
+	&--time {
+		display: flex;
+		width: 100px;
+		background-color: gray;
+		font-size: 20px;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-weight: bold;
+		padding: 10px 0;
+	}
 }

@@ -8,7 +8,12 @@ const Header = ({ labels }: Props) => {
 	return (
 		<div className="calendar__header">
 			{ labels.map((x, i) => (
-				<div className="header__cell" key={i}>{x}</div>
+				<div
+					className={`header__cell${x === 'Time' ? '--time' : '' }`}
+					key={i}
+				>
+					{x}
+				</div>
 			))}
 		</div>
 	)
