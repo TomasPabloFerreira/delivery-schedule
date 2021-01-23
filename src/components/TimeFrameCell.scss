@@ -22,11 +22,11 @@
 			}
 		}
 		&--locked {
-			background-color: #F23;
+			background-color: red;
 			flex: 1;
 			&:hover {
 				cursor: pointer;
-				background-color: darken(#3A3, 5%);
+				background-color: darken(red, 5%);
 			}
 		}
 

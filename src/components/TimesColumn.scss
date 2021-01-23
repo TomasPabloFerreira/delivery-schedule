@@ -1,0 +1,15 @@
+.timesColumn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+	&__cell {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		flex: 1;
+		font-size: 15px;
+		padding: 2px 1px 0px 0px;
+		background-color: white;
+	}
+}

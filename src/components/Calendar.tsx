@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Calendar.scss'
 import { initialData } from '../initialData'
-import { CalendarHeader, DayColumn } from '.'
+import { CalendarHeader, DayColumn, TimesColumn } from '.'
 import { Day } from '../types'
 
 type Props = {
@@ -29,8 +29,10 @@ const getTimeFramesStatus = (days: Day[], userId: string): Day[] => {
 
 const Calendar = ({ userId }: Props) => {
 	const [days, setDays] = useState(initialData.days)
+	const [timeRange, setTimeRange] = useState(initialData.timeRange)
+	const [timeFrameDuration, setTimeFrameDuration] = useState(initialData.timeFrameDuration)
 
-	const daysLabels: string[] = days.map(x => x.label)
+	const daysLabels: string[] = ['Time', ...days.map(x => x.label)]
 
 	useEffect(() => {
 		const newDays = getTimeFramesStatus(initialData.days, userId)
@@ -39,10 +41,10 @@ const Calendar = ({ userId }: Props) => {
 
 	return(
 		<div className="calendar">
-			{/* times column */}
 			<CalendarHeader labels={daysLabels} />
 
 			<section className="calendar__body">
+				<TimesColumn timeRange={timeRange} timeFrameDuration={timeFrameDuration} />
 				{ days.map(x => (
 					<DayColumn data={x} key={x._id} />
 				))}
