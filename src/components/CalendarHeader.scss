@@ -13,6 +13,7 @@
 	color: white;
 	font-weight: bold;
 	padding: 10px 0;
+	min-width: 100px;
 
 	&--time {
 		display: flex;
@@ -24,5 +25,6 @@
 		color: white;
 		font-weight: bold;
 		padding: 10px 0;
+		min-width: 100px;
 	}
 }
