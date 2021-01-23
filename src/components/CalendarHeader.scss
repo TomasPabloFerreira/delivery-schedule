@@ -1,0 +1,9 @@
+.calendar__header {
+	display: flex;
+	flex-direction: row;
+}
+
+.header__cell {
+	flex: 1;
+	background-color: white;
+}
