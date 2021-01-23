@@ -1,10 +1,11 @@
 .calendar {
 	width: 80vw;
 	height: 800px;
-	background-color: #ccc;
+	background-color: #eee;
 	margin: 50px auto;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid #444;
 
 	&__body {
 		flex: 1;

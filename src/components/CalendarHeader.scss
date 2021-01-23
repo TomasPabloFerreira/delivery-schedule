@@ -6,19 +6,19 @@
 .header__cell {
 	flex: 1;
 	display: flex;
-	background-color: gray;
+	background-color: #444;
 	font-size: 20px;
 	align-items: center;
 	justify-content: center;
 	color: white;
 	font-weight: bold;
 	padding: 10px 0;
-	border-left: 1px dashed darkgrey;
+	border-left: 1px dashed #eee;
 
 	&--time {
 		display: flex;
 		width: 100px;
-		background-color: gray;
+		background-color: #444;
 		font-size: 20px;
 		align-items: center;
 		justify-content: center;
