@@ -4,14 +4,16 @@ import { TimeFrameCell } from "."
 
 type Props = {
 	data: Day
+	handleClick: (dayId: string, timeFrameIndex: number) => void
 }
 
-const DayColumn = ({ data }: Props) => {
-	console.log(data)
+const DayColumn = ({ data, handleClick }: Props) => {
 	return (
 		<div className="dayColumn">
 			{data.timeFrames.map((x, i) => (
-				<TimeFrameCell data={x} key={i} />
+				<div className="dayColumn__item" key={i} onClick={() => handleClick(data._id, i)}>
+					<TimeFrameCell data={x} />
+				</div>
 			))}
 		</div>
 	)
