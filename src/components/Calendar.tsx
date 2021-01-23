@@ -17,7 +17,7 @@ const Calendar = ({ userId }: Props) => {
 			{/* times column */}
 			<CalendarHeader labels={daysLabels} />
 
-			<section>
+			<section className="calendar__body">
 				{ days.map(x => (
 					<DayColumn data={x} key={x._id} />
 				))}

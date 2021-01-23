@@ -3,4 +3,9 @@
 	height: 800px;
 	background-color: #ccc;
 	margin: 50px auto;
+
+	&__body {
+		display: flex;
+		flex-direction: row;
+	}
 }

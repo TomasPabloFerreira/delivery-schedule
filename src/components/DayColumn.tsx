@@ -6,10 +6,11 @@ type Props = {
 }
 
 const DayColumn = ({ data }: Props) => {
+	console.log(data)
 	return (
 		<div className="dayColumn">
 			{data.timeFrames.map((x, i) => (
-				<div key={i}>cell</div>
+				<div key={i}>{i}</div>
 			))}
 		</div>
 	)
