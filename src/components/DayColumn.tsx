@@ -11,7 +11,7 @@ const DayColumn = ({ data }: Props) => {
 	return (
 		<div className="dayColumn">
 			{data.timeFrames.map((x, i) => (
-				<TimeFrameCell key={i} />
+				<TimeFrameCell data={x} key={i} />
 			))}
 		</div>
 	)

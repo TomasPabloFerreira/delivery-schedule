@@ -10,7 +10,7 @@ export const initialData = {
 				{ reservations: [] },
 				{ reservations: [] },
 				{ reservations: [] },
-				{ reservations: [] },
+				{ reservations: ['', '', '', '', '', '', '', ''] },
 				{ reservations: [] },
 				{ reservations: [] },
 				{ reservations: [] },
