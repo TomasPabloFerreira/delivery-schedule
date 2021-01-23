@@ -1,5 +1,6 @@
 import { Day } from "../types"
 import './DayColumn.scss'
+import { TimeFrameCell } from "."
 
 type Props = {
 	data: Day
@@ -10,7 +11,7 @@ const DayColumn = ({ data }: Props) => {
 	return (
 		<div className="dayColumn">
 			{data.timeFrames.map((x, i) => (
-				<div key={i}>{i}</div>
+				<TimeFrameCell key={i} />
 			))}
 		</div>
 	)
